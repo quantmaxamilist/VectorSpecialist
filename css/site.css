@@ -35,9 +35,9 @@ section{position:relative;padding:100px 0}
 
 /* ============ HEADER ============ */
 header.site{position:fixed;top:0;left:0;right:0;z-index:120;transition:background .3s,box-shadow .3s,padding .3s}
-header.site .bar{display:flex;align-items:center;gap:28px;height:88px;max-width:var(--wrap);margin:0 auto;padding:0 26px;transition:height .3s}
+header.site .bar{display:flex;align-items:center;gap:28px;height:100px;max-width:var(--wrap);margin:0 auto;padding:0 26px;transition:height .3s}
 .brand{display:flex;align-items:center;flex:0 0 auto}
-.brand img{height:60px;width:auto;transition:height .3s}
+.brand img{height:82px;width:auto;transition:height .3s}
 .brand .l-navy{display:none}
 .nav{display:flex;gap:30px;margin-left:auto;align-items:center}
 .nav a{font-family:var(--f-d);font-weight:600;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;position:relative;padding:6px 0}
@@ -50,10 +50,10 @@ header.site .bar{display:flex;align-items:center;gap:28px;height:88px;max-width:
 .burger span{width:27px;height:3px;background:#fff;border-radius:2px;transition:.2s}
 /* scrolled state */
 header.scrolled{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 6px 24px -14px rgba(12,40,72,.35)}
-header.scrolled .bar{height:74px}
+header.scrolled .bar{height:82px}
 header.scrolled .brand .l-white{display:none}
 header.scrolled .brand .l-navy{display:block}
-header.scrolled .brand img{height:50px}
+header.scrolled .brand img{height:64px}
 header.scrolled .nav a{color:var(--ink)}
 header.scrolled .actions .tel{color:var(--navy)}
 header.scrolled .burger span{background:var(--navy)}
@@ -62,7 +62,7 @@ header.solid{position:sticky;background:#fff;box-shadow:0 6px 24px -16px rgba(12
 header.solid .brand .l-white{display:none}header.solid .brand .l-navy{display:block}
 header.solid .nav a{color:var(--ink)}header.solid .actions .tel{color:var(--navy)}
 header.solid .burger span{background:var(--navy)}
-header.solid .brand img{height:52px}header.solid .bar{height:78px}
+header.solid .brand img{height:66px}header.solid .bar{height:88px}
 
 /* mobile menu */
 .mm-back{position:fixed;inset:0;background:rgba(8,25,43,.55);z-index:130;opacity:0;pointer-events:none;transition:.28s}
@@ -208,7 +208,7 @@ footer .fbrand p{max-width:34ch;color:#8ea0ba}
 @media(max-width:1000px){
  .nav,.actions .tel,.actions .btn{display:none}
  .burger{display:flex}
- .brand img{height:52px}
+ .brand img{height:64px}
  .hero .wrap{padding-top:130px}
 }
 @media(max-width:520px){
