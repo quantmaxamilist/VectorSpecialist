@@ -215,6 +215,33 @@ footer .fbrand p{max-width:34ch;color:#8ea0ba}
 }
 @media(max-width:520px){
  section{padding:70px 0}
- .hero .tagline-badges{gap:16px}
+ .hero .tagline-badges{gap:10px;flex-wrap:nowrap;padding-top:18px;margin-top:22px}
+ .hero .tagline-badges b{font-size:.58rem;letter-spacing:.03em;gap:5px;white-space:nowrap}
+ .hero .tagline-badges b::before{width:6px;height:6px}
  .strip .item{flex-basis:100%;border-right:0;border-bottom:1px solid rgba(255,255,255,.1)}
 }
+@media(max-width:360px){
+ .hero .tagline-badges b{font-size:.52rem}
+ .hero .tagline-badges{gap:8px}
+}
+
+/* ============ PACKING PRICE LIST ============ */
+.price-list{display:grid;grid-template-columns:1fr 1fr;gap:12px 26px;margin:6px 0 26px}
+@media(max-width:560px){.price-list{grid-template-columns:1fr}}
+.price-row{display:flex;align-items:center;gap:14px;padding:12px 4px;border-bottom:1px solid var(--line)}
+.price-row .pthumb{width:66px;height:66px;flex:0 0 auto;border-radius:10px;border:1px solid var(--line);background:#fff;object-fit:cover}
+.price-row .pname{font-weight:600;color:var(--ink);flex:1}
+.price-row .pname small{display:block;font-weight:400;color:var(--muted);font-size:.82rem;letter-spacing:.01em}
+.price-row .pcost{font-family:var(--f-d);font-weight:800;color:var(--green);font-size:1.1rem;white-space:nowrap;margin-left:auto}
+
+/* ============ TURNKEY / ALL-IN-ONE ============ */
+.turnkey{background:linear-gradient(120deg,var(--navy) 0%,var(--navy-d) 55%,var(--green-d) 150%);color:#fff;border-radius:var(--r);padding:44px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;box-shadow:var(--shadow)}
+@media(max-width:820px){.turnkey{grid-template-columns:1fr;padding:32px;gap:26px}}
+.turnkey .eyebrow{color:#8fe0b4}
+.turnkey h2{color:#fff;margin:12px 0 14px}
+.turnkey p{color:#cdd9e6}
+.turnkey .inc{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:4px 0 0}
+@media(max-width:520px){.turnkey .inc{grid-template-columns:1fr}}
+.turnkey .inc li{display:flex;gap:9px;align-items:center;font-family:var(--f-d);font-weight:600;font-size:.86rem;letter-spacing:.02em;color:#eaf1f8}
+.turnkey .inc li::before{content:"";width:8px;height:8px;background:var(--green-l);transform:rotate(45deg);flex:0 0 auto}
+.turnkey .tk-cta{margin-top:22px}
