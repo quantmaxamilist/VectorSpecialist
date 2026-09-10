@@ -109,6 +109,8 @@ header.solid .brand img{height:66px}header.solid .bar{height:88px}
 @media(max-width:900px){.split{grid-template-columns:1fr;gap:34px}.split.rev .split-media{order:0}}
 .split-media{position:relative}
 .split-media img{width:100%;border-radius:var(--r);box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover}
+.split-media.sm img{max-width:400px;margin:0 auto}
+@media(max-width:900px){.split-media.sm img{max-width:100%}}
 .split-media .badge{position:absolute;left:-18px;bottom:-18px;background:var(--green);color:#fff;padding:20px 24px;border-radius:12px;font-family:var(--f-d);box-shadow:var(--shadow)}
 .split-media .badge b{font-size:2rem;display:block;line-height:1}
 .split-media .badge span{font-size:.76rem;text-transform:uppercase;letter-spacing:.12em;opacity:.9}
