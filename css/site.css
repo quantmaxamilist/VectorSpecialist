@@ -139,8 +139,10 @@ header.solid .brand img{height:66px}header.solid .bar{height:88px}
 .dark h2{color:#fff}.dark .sec-head p{color:#aeb9c9}.dark .eyebrow{color:#8fe0b4}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:10px}
 @media(max-width:760px){.stats{grid-template-columns:1fr 1fr}}
-.stat{padding:26px;border-left:3px solid var(--green-l);background:rgba(255,255,255,.03)}
-.stat b{font-family:var(--f-d);font-weight:800;font-size:2.6rem;color:#fff;line-height:1;display:block}
+@media(max-width:560px){.stats{grid-template-columns:1fr;gap:16px}}
+.stat{padding:26px;border-left:3px solid var(--green-l);background:rgba(255,255,255,.03);min-width:0}
+.stat b{font-family:var(--f-d);font-weight:800;font-size:2.6rem;color:#fff;line-height:1.05;display:block;overflow-wrap:break-word;word-break:break-word}
+@media(max-width:560px){.stat{padding:20px}.stat b{font-size:2rem}}
 .stat span{color:#aeb9c9;font-size:.92rem;margin-top:8px;display:block}
 
 /* ============ SECTORS ============ */
