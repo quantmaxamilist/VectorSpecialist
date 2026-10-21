@@ -196,6 +196,14 @@ header.solid .brand img{height:66px}header.solid .bar{height:88px}
 .field-grid .full{grid-column:1/-1}
 #form-status{margin-top:12px;font-size:.92rem;min-height:1.2rem}#form-status.ok{color:var(--green)}#form-status.err{color:#c0392b}
 .form-note{font-size:.8rem;color:var(--muted);margin-top:10px}
+.form-note a{text-decoration:underline;text-underline-offset:2px}
+.legal{max-width:74ch}
+.legal h2{font-size:1.45rem;margin:28px 0 10px}
+.legal ul{margin:0 0 1rem 1.2rem}
+.legal li{margin-bottom:6px}
+.legal a{text-decoration:underline;text-underline-offset:2px}
+.legal .updated{color:var(--muted);font-size:.92rem}
+.legal .todo{background:#eef4fb;border:1px solid #c5d4e6;border-radius:10px;padding:12px 14px;margin:0 0 1rem}
 
 /* ============ FOOTER ============ */
 footer.site{background:var(--navy2);color:#9fb0c9;padding:66px 0 28px;font-size:.92rem}
